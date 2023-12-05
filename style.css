@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: Outfit, sans-serif;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+}
+
+#container {
+    width: fit-content;
+    align-self: center;
+    margin: auto;
+    padding: 15px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+}
+
+/* screen container */
+#screen-container {
+    background-color: darkgray;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 15px;
+    overflow: hidden;
+}
+#previous-expression {
+    font-size: 12pt;
+    text-align: right;
+}
+#current-expression {
+    font-size: 20pt;
+    width: 200px;
+    text-align: right;
+}
+#operation {
+    font-size: 20pt;
+    text-align: left;
+}
+
+/* buttons */
+#btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.btn {
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 10pt;
+    padding: 15px;
+}
+.number {
+    color: black;
+    background-color: white;
+}
+.operator {
+    background-color: grey;
+}
+.result {
+    background-color: green;
+}
+.clear {
+    background-color: red;
+}
